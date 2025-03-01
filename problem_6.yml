@@ -8,7 +8,7 @@
   - name: install nginx
     apt:
       name: nginx
-      state: absent
+      state: present
     register: package_status
     become: yes
 
