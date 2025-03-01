@@ -2,7 +2,7 @@
 Create a simple playbook that prints "Hello, World!" to the console.
 Task: Use the debug module to display a message.
 2. Install a Package
-Write a playbook that 3 installs the curl package on a target machine.
+Write a playbook that installs the curl package on a target machine.
 Task: Use the apt module for Ubuntu or the yum module for CentOS.
 3. Create a Directory
 Create a playbook that creates a directory named /tmp/my_directory on the target machine.
