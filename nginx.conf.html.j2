@@ -1,12 +1,6 @@
 <html>
 <head></head>
-<<<<<<< Updated upstream
-<body>
-    <table>
-        <thead>
-=======
 <body><table><thead>
->>>>>>> Stashed changes
             <tr>
                 <th>Package Name</th>
                 <th>Result</th>
@@ -15,11 +9,7 @@
         <tbody>
             <tr>
                 <td>nginx</td>
-<<<<<<< Updated upstream
-                <td>{{ result }} </td>
-=======
-                <td style="color: {% if result =='installation failed' %} red {% else %} green {% endif %}; "> {{ result }} </td>
->>>>>>> Stashed changes
+                <td style="color: {% if result =='installation successful' %} green {% else %} red {% endif %}; "> {{ result }} </td>
             </tr>
         </tbody>
     </table>
