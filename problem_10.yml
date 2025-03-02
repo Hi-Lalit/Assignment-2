@@ -11,12 +11,12 @@
       path: "{{ file_name }}"
     register: file_exist
 
-  - name: Print result
+  - name: Print result if exists
     debug:
       msg: "The file exists"
     when: file_exist.stat.exists
 
-  - name: Print result
+  - name: Print result if not exists
     debug:
       msg: "The file not exists"
     when: not file_exist.stat.exists

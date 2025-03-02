@@ -8,11 +8,22 @@
   - name: nginx
     apt:
       name: nginx
+<<<<<<< Updated upstream
       state: absent
+=======
+      state: present
+>>>>>>> Stashed changes
     become: yes
     tags: install_nginx
     register: nginx_result
 
+<<<<<<< Updated upstream
+=======
+  # - name: nginx_info
+  #   debug:
+  #     msg: "{{ nginx_result.invocation.module_args.name }} is {{ nginx_result.invocation.module_args.state }}"
+
+>>>>>>> Stashed changes
   - name: nginx_result
     set_fact:
       result: "{{['installation failed' if nginx_result.failed else 'installation successful'] }}"
